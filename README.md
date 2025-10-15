@@ -1,7 +1,7 @@
 # resume_screener
 Smart Resume Screener is an AI-powered tool that automatically parses resumes, extracts key information like skills, education, and experience, and compares them with a given job description. It generates a match score and provides a justification for each candidate using both TF-IDF similarity and LLM-based semantic scoring.
 System overview
-
+<img width="969" height="495" alt="Screenshot 2025-10-15 131223" src="https://github.com/user-attachments/assets/ae32333f-d1d0-4399-85bb-253e5db8db90" />
 Upload / Ingest
 Frontend (Streamlit) accepts resume files (PDF/DOCX/TXT) and a Job Description (text or uploaded JD).
 
@@ -54,6 +54,7 @@ API endpoints:
 /candidate/{id} (view detail)
 
 Caching layer for LLM responses (cache by hash of JD+resume text).
+<img width="986" height="638" alt="Screenshot 2025-10-15 131320" src="https://github.com/user-attachments/assets/5f3eb9c7-1517-45af-afec-62ce205a244e" />
 
 Frontend
 
