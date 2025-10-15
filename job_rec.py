@@ -40,9 +40,6 @@ def recommend_jobs(resume_text, jobs, top_n=5):
     top_indices = similarity_scores[0].argsort()[-top_n:][::-1]
     return jobs.iloc[top_indices]
 
-# ----------------------------
-# 4. Streamlit UI
-# ----------------------------
 def main():
     st.title("💼 Job Recommendation System")
     st.write("Upload your resume and get job recommendations based on your skills!")
@@ -62,7 +59,7 @@ def main():
         # Recommend jobs
         recommended = recommend_jobs(resume_text, jobs)
 
-        st.subheader("✅ Recommended Jobs for You")
+        st.subheader("Recommended Jobs for You")
         st.table(recommended[['job_id','job_title','category']])
 
         # Show detailed job descriptions
@@ -74,3 +71,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
